@@ -12,6 +12,14 @@ $(document).ready(function(){
         k=y._={s:[],t:[+new Date],c:{},l:a};
         })(window,document,"static.olark.com/jsclient/loader.js");
         olark.identify('5196-724-10-5701');
+        
+        var isOffline = $(".olark-generated-message").text().includes("We are not currently available via chat")
+
+        if (isOffline) {
+          olark('api.box.hide');
+        } else {
+          $("#kommunicate-widget-iframe").hide()
+        }
     }
  });
 });
