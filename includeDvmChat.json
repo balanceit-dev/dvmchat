@@ -1,4 +1,5 @@
 {
 	"alpha.balance.it": false,
-	"secure.balanceit.com": true
+	"secure.balanceit.com": true,
+        "beta.balance.it": true,
 }
